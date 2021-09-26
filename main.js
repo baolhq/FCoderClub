@@ -34,9 +34,7 @@ passport.use(
     {
       clientID: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
-      callbackURL: `http://localhost:${
-        process.env.PORT || 5000
-      }/auth/github/callback`,
+      callbackURL: `https://clb-fcoder.herokuapp.com/auth/github/callback`,
     },
     function (accessToken, refreshToken, profile, cb) {
       cb(null, profile);
