@@ -1,0 +1,21 @@
+extends layout 
+
+block head 
+    title 404 Not Found - FCoder
+
+block style 
+    style 
+        include ./not-found.css
+
+block content 
+    section.home-section 
+        .outer-container 
+            #not-found-container 
+                h1
+                    | 4
+                    span#offset 0
+                    | 4
+        
+            h3.not-found-text Oops! Your page is missing! 🤔
+            h3.not-found-text Want a trip back to the  
+                a(href="/") homepage?

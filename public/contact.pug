@@ -1,0 +1,26 @@
+extends layout 
+
+block head 
+    title Contact us - FCoder 
+
+block style 
+    style 
+        include ./contact.css
+
+block content 
+    section.home-section 
+        .contact-container 
+            h3 Contact us via 
+            .d-flex 
+                a(href="https://www.facebook.com/FCoderFUCT", target="_blank") 
+                    .y-flex 
+                        i.bx.bxl-facebook-circle
+                        p Facebook
+                a(href="https://mail.google.com/mail/?view=cm&fs=1&to=clbfcoder@gmail.com", target="_blank") 
+                    .y-flex 
+                        i.bx.bx-mail-send
+                        p Email
+                a(href="https://goo.gl/maps/FVsiNXx6ysgQwDzE7", target="_blank") 
+                    .y-flex
+                        i.bx.bx-map 
+                        p Address

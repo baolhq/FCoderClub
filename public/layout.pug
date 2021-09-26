@@ -1,0 +1,73 @@
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+        block style 
+
+        style 
+            include ./style.css
+            
+        //Boxicons CDN
+        link(rel="stylesheet", href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css")
+        
+        link(rel="icon", href="https://i.imgur.com/DtEYeGP.jpg", sizes="16x16 32x32")
+
+        block head 
+            title FCoder
+
+    body
+        .sidebar 
+            .logo-details 
+                i.bx.bx-code-alt.icon 
+                a.logo-name(href="#") FCoder 
+                i.bx.bx-menu#btn 
+            ul.nav-list 
+                li 
+                    i.bx.bx-search(accesskey="/") 
+                    input#search-field(type="text", placeholder="Search..")
+                    span.tooltip Search 
+                li 
+                    a.active(href="/") 
+                        i.bx.bx-grid-alt 
+                        span.links-name Articles 
+                    span.tooltip Articles
+                li 
+                    a(href="/questions") 
+                        i.bx.bx-question-mark 
+                        span.links-name Questions
+                    span.tooltip Questions
+                li 
+                    a(href="/challenges") 
+                        i.bx.bx-code-curly 
+                        span.links-name Coding Challenge  
+                    span.tooltip Coding Challenge 
+                li 
+                    a(href="/contact") 
+                        i.bx.bx-support 
+                        span.links-name Contact  
+                    span.tooltip Contact 
+                li 
+                    a(href="/account") 
+                        i.bx.bx-user 
+                        span.links-name Account 
+                    span.tooltip Account 
+                li.profile 
+                    .profile-details 
+                        img(src=avatar, alt="profileImg")
+                        .name-job 
+                            .name #{displayName}
+                            .job @#{username}
+
+                    if isAnonymous
+                        a(href="/auth/github", title="Login with Github") 
+                            i.bx.bx-log-in-circle#log-out 
+                    else 
+                        a(href="/auth/logout", title="Logout") 
+                            i.bx.bx-log-out-circle#log-out 
+                    
+        block content
+
+        script 
+            include ./sidebar.js
+        block script 

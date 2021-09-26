@@ -1,0 +1,26 @@
+extends layout 
+
+block head 
+    title Coming Soon - FCoder
+
+block style 
+    style 
+        include ./not-found.css
+
+block content 
+    section.home-section 
+        .outer-container 
+            #not-found-container 
+                h1
+                    | Co
+                    span#offset mi
+                    | ng
+                h1
+                    | S
+                    span#offset oo
+                    | n
+            h3.not-found-text 
+                | Sorry for the inconvenient 🙏 
+                br
+                | Could we help you comeback to the 
+                a(href="/") homepage?

@@ -1,0 +1,92 @@
+.questions-container {
+  width: 850px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.questions-list {
+  max-width: 100%;
+  list-style: none;
+}
+
+.questions-list .question {
+  padding: 10px;
+  height: 110px;
+  border-radius: 6px;
+  border: 3px solid rgb(104, 157, 255);
+  margin-bottom: 25px;
+  transition: all .2s ease;
+  box-shadow: rgba(0, 102, 255, 0.35) 0px 5px 15px;
+}
+
+.questions-list .question:hover {
+  box-shadow: rgba(104, 157, 255, 0.4) 0px 5px, rgba(104, 157, 255, 0.3) 0px 10px,
+    rgba(104, 157, 255, 0.2) 0px 15px, rgba(104, 157, 255, 0.1) 0px 20px,
+    rgba(104, 157, 255, 0.05) 0px 25px;
+}
+
+.metadata {
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 15px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.y-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  width: 100%;
+}
+
+.body .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.body .title,
+.tag a,
+.footer .username {
+  text-decoration: none;
+  color: #fff;
+  transition: all .2s ease;
+}
+
+.body .title:hover,
+.tag a:hover,
+.footer .username:hover {
+  color: rgb(68, 196, 255);
+}
+
+.tag a::before {
+    content: "#";
+    color: rgb(172, 172, 172);
+    font-size: .9rem;
+}
+
+.footer {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.tags-list {
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.tag {
+  margin: auto 5px;
+}

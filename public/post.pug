@@ -1,0 +1,31 @@
+extends layout 
+
+block style 
+    style 
+        include ./post.css
+
+    // Code syntax highlighter
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css")
+
+block content 
+    .home-section 
+        .outer-container
+            img#thumbnail(src= post.thumbnail, alt=`${post.title}'s thumbnail`)
+            .post-container
+                h2.title= post.title
+                p 
+                    span.date= post.date
+                    span  by 
+                    span.author= post.author 
+
+                != post.content
+
+                ul.tag-list 
+                    each tag in post.tags
+                        li.tag 
+                            a(href=`/tag/${tag}`)= `# ${tag}`
+
+block script 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js") 
+    script. 
+        hljs.highlightAll();

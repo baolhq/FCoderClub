@@ -1,0 +1,139 @@
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1150px;
+  margin: auto;
+}
+
+.card {
+  margin-top: 10px;
+  overflow: hidden;
+  width: 350px;
+  height: fit-content;
+  position: relative;
+  background-color: rgb(24, 26, 27);
+  transition: all 0.2s ease;
+  box-shadow: 0px 1px 0px 0px white;
+  border-radius: 3px;
+  background-color: rgb(50, 50, 50, 0.15);
+}
+
+.card:hover {
+  box-shadow: rgba(104, 157, 255, 0.4) 0px 5px,
+    rgba(104, 157, 255, 0.3) 0px 10px, rgba(104, 157, 255, 0.2) 0px 15px,
+    rgba(104, 157, 255, 0.1) 0px 20px, rgba(104, 157, 255, 0.05) 0px 25px;
+}
+
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  transition: all 0.4s ease;
+}
+
+.tag:hover {
+  background: #333;
+}
+
+.tag-teal {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: rgb(190, 190, 190);
+  margin: 10px 0 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.card-body .card-title {
+  text-decoration: none;
+  font-size: 1.4em;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  transition: all 0.4s ease;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.card-body .card-title:hover {
+  color: rgb(58, 193, 255);
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.user .views {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.user .views small {
+  margin-right: 5px;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.user-info a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+  transition: all 0.2s ease;
+  font-size: 1.1rem;
+}
+
+.user-info a:hover {
+  color: rgb(58, 193, 255);
+}
+
+.user-info small {
+  color: #ddd;
+}

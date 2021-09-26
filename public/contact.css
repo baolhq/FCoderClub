@@ -1,0 +1,43 @@
+.contact-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-container h3 {
+    font-size: 3rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.d-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.y-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.y-flex p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.d-flex a {
+    text-decoration: none;
+    color: rgb(46, 109, 204);
+    font-size: 4rem;
+    transition: all .5s ease;
+}
+
+.d-flex a:hover {
+    color:rgb(58, 193, 255);
+}

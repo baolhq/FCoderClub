@@ -1,0 +1,23 @@
+extends layout
+block style 
+    style 
+        include ./articles.css
+block content 
+    section.home-section 
+        .container 
+            each post in posts 
+                .card 
+                    .card-header 
+                        img(src= post.thumbnail, alt= `${post.title} thumbnail`)
+                    .card-body 
+                        a.card-title(href= `/article/${post.slug}`, title= post.title)= post.title
+                        p= post.desc
+                        .user 
+                            img(src= post.authorAvt, alt= `${post.author}'s avatar`)
+                            .user-info 
+                                a(href="#") 
+                                    h5= post.author
+                                small= post.date
+                            p.views(title=`${post.views} views`)
+                                small= post.views
+                                i.bx.bx-show-alt 

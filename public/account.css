@@ -1,0 +1,126 @@
+.account-page {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.account-page .title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.account-page .d-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.account-page .d-flex div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.account-page .d-flex #name-container {
+    width: 60%;
+    align-self: center;
+}
+
+.account-page .d-flex img {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 5px;
+    user-select: none;
+    animation: pulse 2s cubic-bezier(.22,.68,0,1.71) infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: rgba(3, 101, 214, 0.445) 0px 0px 0px 5px;
+    }
+    50% {
+        box-shadow: rgba(59, 3, 214, 0.781) 0px 0px 0px 10px;
+    }
+}
+
+.account-page .d-flex img:hover {
+    cursor: pointer;
+}
+
+.account-page .d-flex div input,
+.account-page .d-flex div label {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.account-page .d-flex div input {
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(194, 203, 212, 0.3) 0px 0px 0px 3px;
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.bio-container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.bio-container textarea {
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(194, 203, 212, 0.3) 0px 0px 0px 3px;
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    cursor: not-allowed;
+    resize: none;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.bio-container textarea, 
+.bio-container label {
+    margin-top: 5px;
+}
+
+.account-page .btn-container {
+    display: flex;
+    margin-left: 35px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.account-page .btn-container .update-btn {
+    width: 200px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    transition: .2s;
+    background-color: rgb(10, 10, 32);
+    color: #fff;
+    border: 1px solid rgb(10, 10, 32);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@media only screen and (max-width: 1600px) {
+    .account-page {
+        width: 60%;
+    }
+}

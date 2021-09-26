@@ -1,0 +1,179 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.outer-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.outer-container a {
+    text-decoration: none;
+    color: #0066ff;
+}
+
+.outer-container .not-found-text {
+    font-size: 2rem;
+    color: #fff;
+}
+
+#not-found-container {
+  border: 3px solid #1087e883;
+  width: 500px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  animation: border-flicker 2s linear infinite;
+}
+
+#not-found-container h1 {
+  color: #2c99ff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 7rem;
+  letter-spacing: 10px;
+  animation: text-flicker 3s linear infinite;
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px rgb(22, 125, 242);
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+
+  77% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    -moz-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  2% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    -moz-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  4% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    -moz-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+
+  8% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    -moz-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    -moz-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  100% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    -moz-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgb(22, 125, 242);
+  }
+}

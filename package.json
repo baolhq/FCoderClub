@@ -1,0 +1,32 @@
+{
+  "name": "fcoder",
+  "version": "1.0.0",
+  "description": "FCoder official website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "nodemon main.js"
+  },
+  "keywords": [
+    "fcoder"
+  ],
+  "author": "baolhq",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "firebase": "^9.0.2",
+    "firebase-admin": "^9.11.1",
+    "https": "^1.0.0",
+    "passport": "^0.4.1",
+    "passport-github2": "^0.1.12",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}

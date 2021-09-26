@@ -1,0 +1,53 @@
+extends layout 
+
+block style
+    style 
+        include ./account.css
+
+block head 
+    title Your Profile - FCoder
+
+block content 
+    .home-section
+        .account-page 
+            h3.title Profile
+            .d-flex 
+                img(src= userAvatar, alt=`${username}'s avatar`)
+                div#name-container
+                    label(for="name") Name 
+                    input#name(
+                        type="text",
+                        value= displayName,
+                        disabled)
+            .d-flex 
+                div 
+                    label(for="email") Email
+                    input#email(
+                        type="email",
+                        value= email,
+                        disabled)
+                div 
+                    label(for="blog") Blog
+                    input#blog(
+                        type="text",
+                        value= blog,
+                        disabled)
+            .d-flex 
+                div 
+                    label(for="company") Company 
+                    input#company(
+                        type="text",
+                        value= company,
+                        disabled)
+                div  
+                    label(for="location") Location
+                    input#location(
+                        type="text",
+                        value= location,
+                        disabled)
+            .bio-container 
+                label(for="bio") Bio 
+                textarea#bio(name="bio", cols="30", rows="6", spellcheck="false",
+                        disabled)= bio
+            .btn-container 
+                a.update-btn(href=`https://github.com/settings/profile`, target="_blank") Update on Github
