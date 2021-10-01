@@ -1,5 +1,5 @@
 // For development only
-// require("dotenv").config();
+require("dotenv").config();
 
 // This line is required for Github authentication to work
 require("https").globalAgent.options.rejectUnauthorized = false;

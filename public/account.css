@@ -1,3 +1,7 @@
+body {
+    overflow-y: hidden;
+}
+
 .account-page {
     width: 40%;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
